@@ -124,8 +124,9 @@ var Do = '\\d{1,2}(st|nd|rd|th)';
 
 var dateFormatRegexStrings = [
   YYYY + '-' + M + '-' + D,
-  M + '\\/' + D + '\\/' + YYYY,
   YYYY + '\\/' + M + '\\/' + D,
+  '\\d{2}' + '\\/' + '\\d{2}' + '\\/' + '\\d{4}',
+  M + '\\/' + D + '\\/' + YYYY,
   MMMM + ' ' + DD + ', ' + YYYY,
   MMM + ' ' + DD + ', ' + YYYY,
   MMMM + ' ' + Do + ', ' + YYYY,
@@ -134,8 +135,9 @@ var dateFormatRegexStrings = [
 
 var dateFormatStrings = [
   'YYYY-M-D',
-  'M/D/YYYY',
   'YYYY/M/D',
+  'DD/MM/YYYY',
+  'M/D/YYYY',
   'MMMM DD, YYYY',
   'MMM DD, YYYY',
   'MMMM Do, YYYY',
