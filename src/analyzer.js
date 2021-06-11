@@ -23,7 +23,7 @@ var CONSTANT = require('./constant');
 var VALIDATOR_MAP = require('./validator-map');
 var Utils = require('./utils');
 
-var NUMBER_OF_ALLOWED_HITS = 0;
+var NUMBER_OF_ALLOWED_HITS = 1;
 
 var Analyzer = {};
 
